@@ -81,7 +81,9 @@ header > .sec1 >.container >div ul >li >a{
 }
 
 section.sec2{
-    border: 1px solid black;
+    background-color: white;
+    position: sticky;
+    top: 0;
 }
 
 header> .sec2> .container >div{
@@ -119,4 +121,107 @@ header>.sec2> .container >div >nav >ul li:not(:first-child){
 
 header>.sec2 .nav img{
     width: 80px;
+}
+
+.baner{
+    background-color: rgb(230, 230, 230);
+}
+
+.baner img{
+    width: 100%;
+}
+
+.baner .how{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.baner .how h3{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.baner .how h2{
+    margin-bottom: 20px;
+}
+
+.baner .how .pink{
+    border: 1px solid #b0003a;
+    width: 80px;
+    height: 1px;
+    background-color: #b0003a;
+    margin-bottom: 20px;
+}
+
+.baner .how p{
+    color: #3a3a3a;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.baner .box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.baner .box div{
+    border: 1px rgb(216, 215, 215) solid;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 15px;
+    padding: 60px 60px;
+    text-align: center;
+    position:relative;
+}
+
+.baner .box h1{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 4em;
+    color: rgb(230, 230, 230);
+}
+.baner .box h3{
+    margin-bottom: 10px;
+}
+.baner .box p{
+    margin-bottom: 10px;
+}
+
+.baner .box span{
+    position: relative;
+    margin-bottom: 25px;
+}
+.baner .box span i{
+    font-size: 4em;
+    color: #b0003a;
+}
+
+.baner .box span .fa-plus{
+    position: absolute;
+    color: white;
+    background-color: #b0003a;
+    font-size: 1em;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid white;
+    top: 35px;
+    right: -6px;
+}
+
+.baner .box span .fa-key{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 2em;
+
 }
