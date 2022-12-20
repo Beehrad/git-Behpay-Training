@@ -222,7 +222,7 @@ header>.sec2 .nav img{
     margin-bottom: 20px;
 }
 
-.baner .how .pink{
+.pink{
     border: 1px solid #b0003a;
     width: 80px;
     height: 1px;
@@ -255,6 +255,7 @@ header>.sec2 .nav img{
     padding: 60px 60px;
     text-align: center;
     position:relative;
+    margin-bottom: 70px;
 }
 
 .baner .box h1{
@@ -298,4 +299,46 @@ header>.sec2 .nav img{
     right: 40px;
     font-size: 2em;
 
+}
+
+section.money{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+section.money h2{
+    margin: 40px 0;
+}
+
+section.money p{
+    color: #3a3a3a;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+section.money> div.payment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+section.money> div.payment >div{
+    border: 1px solid rgb(230, 230, 230);;
+    margin: 10px 15px;
+    padding: 20px 30px;
+}
+
+section.money> div.payment >div:hover{
+    transform: scale(1.05,1.05);
+    transition: all ease-in-out 0.3s;
+}
+
+section.hand{
+    background-image: url(./img/why-Beh.jpg) ,;
+    background-size: 100%;
 }
