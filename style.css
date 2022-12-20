@@ -256,6 +256,20 @@ header>.sec2 .nav img{
     text-align: center;
     position:relative;
     margin-bottom: 70px;
+                                            /* #animation */
+    animation-name: animation;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animation{
+    0% {transform: rotate(-45deg);}
+    /* 25% {transform: rotate(0);} */
+    50% {transform: rotate(45deg);}
+    /* 75% {transform: rotate(0);} */
+    100% {transform: rotate(-45deg);}
 }
 
 .baner .box h1{
@@ -265,6 +279,7 @@ header>.sec2 .nav img{
     font-size: 4em;
     color: rgb(230, 230, 230);
 }
+
 .baner .box h3{
     margin-bottom: 10px;
 }
@@ -272,9 +287,17 @@ header>.sec2 .nav img{
     margin-bottom: 10px;
 }
 
+@keyframes behrad{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
 .baner .box span{
     position: relative;
     margin-bottom: 25px;
+    animation-name: behrad;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 .baner .box span i{
     font-size: 4em;
@@ -337,8 +360,71 @@ section.money> div.payment >div:hover{
     transform: scale(1.05,1.05);
     transition: all ease-in-out 0.3s;
 }
-
 section.hand{
-    background-image: url(./img/why-Beh.jpg) ,;
-    background-size: 100%;
+    background-image:url(./img/dark_tint.png) , url(./img/why-Beh.jpg);
+    background-size: 130%;
+    background-position: center;
+    background-position-y: -20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+section.hand h2{
+    color: white;
+    margin-top: 65px;
+    margin-bottom: 30px
+}
+section.hand{
+    color: white;
+    font-size: 16px;
+}
+section.hand .white{
+    border: 1px solid white;
+    width: 80px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+
+section.hand .fast{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap:20px;
+    grid-column-gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 0 50px;
+    margin-bottom: 80px;
+
+}
+
+section.hand .fast>div{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+
+section.hand .fast>div img{
+    width: 50px;
+}
+section.hand .fast>div .lock img{
+    width: 40px;
+}
+
+section.hand .fast>div h3{
+    margin-bottom: 10px;
+}
+section.hand .fast>div p{
+    font-size: 1.2em;
+}
+
+section.hand .fast>div >span{
+    margin-right: 20px;
+}
+
