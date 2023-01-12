@@ -93,6 +93,8 @@ section.sec2{
     top: 0;
 }
 
+.sec2 
+
 header> .sec2> .container >div{
     display: flex;
     justify-content: space-between;
@@ -592,4 +594,10 @@ align-items: center;
 }
 .curency .body div p{
     font-size: 1.3em;
+}
+.vouchers .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
