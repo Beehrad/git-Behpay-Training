@@ -678,7 +678,7 @@ footer{
     background-image: url(./img/neu.jpg);
     background-size: cover;
     padding: 50px 0;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
     position: relative;
     z-index: 0;
 }
@@ -695,13 +695,8 @@ footer::after{
 }
 
 footer .container{
-    border: 1px solid red;
     margin-top: 30px;
     
-}
-
-footer .container .main> div{
-    border: 1px solid red;
 }
 
 
@@ -724,6 +719,71 @@ footer .main .contact li{
 footer .main .contact i{
     margin-right: 15px;
 }
+
+footer .main .contact .with-uns{
+    margin-top: 60px;
+}
+
+footer .main .contact .with-uns div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 70px;
+}
+
+footer .main .contact .with-uns span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+    height: fit-content;
+    text-align: center;
+}
+
+footer .main .contact .with-uns span i{
+    border: 1px solid white;
+    padding: 5px;
+    color: #ababab;
+}
+
+footer .main .contact .with-uns span .fa-telegram:hover{
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+footer .main .contact .with-uns span .fa-instagram:hover{ 
+    border-radius: 10px;
+    background-color: #b0003a;
+    color: white;
+    border-color: #b0003a;
+}
+
+footer .main .contact .with-uns span .fa-youtube:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+    border-color: white;
+}
+
+footer .main .contact .with-uns span img:hover{
+    border-radius: 10px;
+    background-color: black;
+    
+}
+
+
+
+footer .main .contact .with-uns span img{
+    width: 30px;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+
 footer .main >div{
     display: flex;
     flex-direction: column;  
@@ -735,7 +795,8 @@ footer p{
     color: white;
 }
 .uselink{
-    grid-column: 3/4;
+    grid-column: 2/4;
+    margin-left: 70px;
 }
 
 .hours{
@@ -763,4 +824,41 @@ footer li{
 footer li a{
     color: #ababab;
     z-index: -1;
+}
+
+footer .download{
+    margin-top: 40px;
+    max-width: 70%;
+}
+
+footer .download >div{
+    margin-bottom:30px;
+    display: flex;
+    justify-content: space-between
+}
+
+footer .download >div span{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .download >div span a{
+    color: white;
+    font-size: 1.1em;
+    position: relative;
+}
+
+footer .download >div span:first-child a::before{
+    content:"\2913" ;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    top: -10px;
+    left: -20px;
 }
