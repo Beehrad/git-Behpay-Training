@@ -677,8 +677,7 @@ align-items: center;
 footer{
     background-image: url(./img/neu.jpg);
     background-size: cover;
-    padding: 50px 0;
-    padding-bottom: 150px;
+    padding-top: 50px;
     position: relative;
     z-index: 0;
 }
@@ -861,4 +860,10 @@ footer .download >div span:first-child a::before{
     font-weight: bold;
     top: -10px;
     left: -20px;
+}
+
+footer .final{
+    color: white;
+    background-color: rgb(29, 28, 28);
+    line-height: 50px;
 }
